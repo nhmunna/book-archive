@@ -30,7 +30,7 @@ const displaySearchResult = books => {
     resultNum.textContent = '';
     const numDiv = document.createElement('div');
     numDiv.innerHTML = `
-    <h5>Total search number is ${books.length}</h5>
+    <h5>${books.length} results are found. </h5>
     `;
     resultNum.appendChild(numDiv);
     if (books.length === 0) {
@@ -43,7 +43,7 @@ const displaySearchResult = books => {
     }
     else {
         books.forEach(book => {
-            console.log(book);
+            // console.log(book);
             const div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML = `
